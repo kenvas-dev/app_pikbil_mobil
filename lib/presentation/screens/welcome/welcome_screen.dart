@@ -8,8 +8,8 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text('welcome'),),
+    return const Scaffold(
+      body: Center(child: Text('welcome', style: TextStyle(fontSize: 40,  fontFamily: 'Gotham-Book')),),
     );
   }
 }
