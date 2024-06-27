@@ -36,3 +36,60 @@ flutter:
   assets:
     - .env
     - assets/
+  fonts:
+    - family: Gotham-Black
+      fonts:
+        - asset: fonts/Gotham-Black.otf
+
+    - family: Gotham-Bold-Italic
+      fonts:
+        - asset: fonts/Gotham-Bold-Italic.ttf
+
+    - family: Gotham-Bold
+      fonts:
+        - asset: fonts/Gotham-Bold.otf
+
+    - family: Gotham-Book
+      fonts:
+        - asset: fonts/Gotham-Book.otf
+
+    - family: Gotham-Extra-Light-Italic
+      fonts:
+        - asset: fonts/Gotham-Extra-Light-Italic.otf
+
+    - family: Gotham-Extra-Light
+      fonts:
+        - asset: fonts/Gotham-Extra-Light.otf
+
+    - family: Gotham-Italic
+      fonts:
+        - asset: fonts/Gotham-Italic.otf
+
+    - family: Gotham-ItalicBold
+      fonts:
+        - asset: fonts/Gotham-ItalicBold.otf
+
+    - family: Gotham-Light
+      fonts:
+        - asset: fonts/Gotham-Light.otf
+
+    - family: Gotham-Medium
+      fonts:
+        - asset: fonts/Gotham-Medium.otf
+
+    - family: Gotham-Regular
+      fonts:
+        - asset: fonts/Gotham-Regular.otf
+
+    - family: Gotham-Thin-Italic
+      fonts:
+        - asset: fonts/Gotham-Thin-Italic.otf
+
+    - family: Gotham-Thin
+      fonts:
+        - asset: fonts/Gotham-Thin.otf
+        
+    - family: Gotham-Ultra
+      fonts:
+        - asset: fonts/Gotham-Ultra.otf
+    
