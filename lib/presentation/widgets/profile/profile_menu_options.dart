@@ -47,7 +47,7 @@ class ProfileMenuOptions extends StatelessWidget {
         scrollDirection: Axis.vertical,
         itemBuilder: (context, index) {
           final menuListItem = menuList[index];
-          return FadeInLeft(
+          return FadeInRight(
             child: GestureDetector(
               onTap: () {
                 context.push(menuListItem.route);
@@ -82,10 +82,7 @@ class ProfileMenuOptions extends StatelessWidget {
                       ),
                       Text(
                         menuListItem.menuLabel,
-                        style: const TextStyle(
-                            fontFamily: 'Gotham-Book',
-                            fontSize: 14,
-                            color: Color.fromRGBO(25, 34, 82, 1)),
+                        style: CustomText.headlineBookDark500,
                       )
                     ],
                   ),
@@ -95,7 +92,8 @@ class ProfileMenuOptions extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                         // color: Colors.white,
-                        border: Border.all(width: 0.2, color: Colors.black12)),
+                        border: Border.all(
+                            width: 0.2, color: CustomColor.primary200)),
                   ),
                   const SizedBox(
                     height: 20,

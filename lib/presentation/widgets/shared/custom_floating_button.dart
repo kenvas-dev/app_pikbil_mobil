@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CustomFloatingButton extends StatelessWidget {
   final Alignment alignment;
   final VoidCallback voidCallback;
@@ -20,6 +19,7 @@ class CustomFloatingButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double widthViewport = MediaQuery.of(context).size.width;
     return Align(
       alignment: alignment,
       child: GestureDetector(
@@ -29,7 +29,7 @@ class CustomFloatingButton extends StatelessWidget {
           child: ClipRRect(
             borderRadius: borderRadius,
             child: Container(
-              width: double.infinity,
+              width: widthViewport * 0.70,
               color: colorButton,
               child: Padding(
                 padding: EdgeInsets.all(10),
