@@ -4,4 +4,5 @@ class PathImage {
   static const String billing = "$assetsImagesDir/billing.png";
   static const String changePassword = "$assetsImagesDir/password.png";
   static const String notification = "$assetsImagesDir/notification.png";
+  static const String visa = "$assetsImagesDir/visa.png";
 }
