@@ -16,4 +16,10 @@ class InformativeTexts {
   static const String accountScreenDate = 'Date of birth';
   static const String accountScreenDatePlaceholder = 'nov 21, 1992';
   static const String accountScreenUpdateProfile = 'Update profile';
+  static const String billingScreenBilling = 'Billing';
+  static const String billingScreenPaymentMethod = 'Payment method';
+  static const String billingScreenTargetNumber = '0000000012345678';
+  static const String billingScreenTargetClient = 'Kevin Aquino';
+  static const String billingScreenTargetExpire = '09/24';
+  static const String billingScreenAddMorePaymentMethod = 'Add more payment method';
 }
