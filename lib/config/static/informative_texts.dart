@@ -7,6 +7,7 @@ class InformativeTexts {
   static const String profileMenuOptionBilling = 'Billing';
   static const String profileMenuOptionChangePassword = 'Change Password';
   static const String profileMenuOptionNotification = 'Notification';
+
   static const String accountScreenProfile = 'Account profile';
   static const String accountScreenChangePicture = 'Change profile picture';
   static const String accountScreenFullName = 'Full Name';
@@ -16,10 +17,20 @@ class InformativeTexts {
   static const String accountScreenDate = 'Date of birth';
   static const String accountScreenDatePlaceholder = 'nov 21, 1992';
   static const String accountScreenUpdateProfile = 'Update profile';
+
   static const String billingScreenBilling = 'Billing';
   static const String billingScreenPaymentMethod = 'Payment method';
   static const String billingScreenTargetNumber = '0000000012345678';
   static const String billingScreenTargetClient = 'Kevin Aquino';
   static const String billingScreenTargetExpire = '09/24';
   static const String billingScreenAddMorePaymentMethod = 'Add more payment method';
+  
+  static const String changePasswordScreenChangePassword = 'Change Password';
+  static const String changePasswordScreenOldPassword = 'Old Password';
+  static const String changePasswordScreenOldPasswordPlaceholder = 'Old Password';
+  static const String changePasswordScreenNewPassword = 'New Password';
+  static const String changePasswordScreenNewPasswordPlaceholder = 'New Password';
+  static const String changePasswordScreenNewPasswordRetype = 'Retype new Password';
+  static const String changePasswordScreenNewPasswordRetypePlaceholder = 'Retype new Password';
+  static const String changePasswordScreenNewPasswordButton = 'Change Password';
 }
