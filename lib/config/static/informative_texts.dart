@@ -1,6 +1,8 @@
 class InformativeTexts {
   static const String profileScreenProfile = 'Profile';
   static const String profileScreenLogout = 'Logout';
+  static const String profileScreenLogoutAccount = 'Logout Account';
+  static const String profileScreenLogoutAccountDetails = 'loremEst ut aliquip consequat in cupidatat veniam quis duis irure ex enim culpa sit?';
   static const String profileScreenNameUser = '#Name Client';
   static const String profileScreenCodeUser = '#Code';
   static const String profileMenuOptionAccount = 'Account profile';
