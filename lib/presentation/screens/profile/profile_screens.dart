@@ -36,14 +36,40 @@ class ProfileScreen extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              ProfileMenuOptions()
+              ProfileMenuOptions(),
             ],
           ),
         ),
       ),
       floatingActionButton: CustomFloatingButton(
           alignment: Alignment.bottomCenter,
-          voidCallback: () {},
+          voidCallback: () {
+            showDialog(
+              barrierDismissible: false,
+              context: context,
+              builder: (context) {
+                return CustomDialog(
+                  hasEnabledButtonClose: true,
+                  title: InformativeTexts.profileScreenLogoutAccount,
+                  content: InformativeTexts.profileScreenLogoutAccountDetails,
+                  actions: [
+                    CustomButton(
+                        voidCallback: () {
+                          context.pushReplacement(PathRouter.welcome);
+                        },
+                        margin: const EdgeInsetsDirectional.all(0),
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
+                        colorButton: CustomColor.primary900,
+                        textButton: const Text(
+                            InformativeTexts.profileScreenLogout,
+                            textAlign: TextAlign.center,
+                            style: CustomText.headlineWhite500))
+                  ],
+                );
+              },
+            );
+          },
           margin: const EdgeInsetsDirectional.only(bottom: 20),
           borderRadius: const BorderRadius.all(Radius.circular(10)),
           colorButton: CustomColor.primary900,
