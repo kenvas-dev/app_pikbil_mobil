@@ -23,7 +23,7 @@ class CustomFloatingButton extends StatelessWidget {
     return Align(
       alignment: alignment,
       child: GestureDetector(
-        onTap: () => voidCallback,
+        onTap: voidCallback,
         child: Container(
           margin: margin,
           child: ClipRRect(
