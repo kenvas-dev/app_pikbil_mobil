@@ -41,7 +41,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   SizedBox(
                     height: 600,
                     child: PageView(
-                      physics: NeverScrollableScrollPhysics(),
+                      physics: const NeverScrollableScrollPhysics(),
                       controller: controller,
                       onPageChanged: (value) {
                         pagePosition = value;
