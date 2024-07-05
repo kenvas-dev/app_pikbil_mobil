@@ -1,8 +1,10 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:app_pikbil_mobil/config/router/router.dart';
 import 'package:app_pikbil_mobil/config/static/static.dart';
 import 'package:app_pikbil_mobil/presentation/views/views.dart';
 import 'package:app_pikbil_mobil/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -82,7 +84,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(10)),
                                   colorButton: CustomColor.primary000,
-                                  textButton: const Text('Skip',
+                                  textButton: const Text(
+                                      InformativeTexts.welcomeScreenSkipBtn,
                                       textAlign: TextAlign.center,
                                       style: CustomText.headlineBookDark400)),
                             ),
@@ -113,20 +116,23 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(10)),
                                   colorButton: CustomColor.information900,
-                                  textButton: const Text('Next',
+                                  textButton: const Text(
+                                      InformativeTexts.welcomeScreenNextBtn,
                                       textAlign: TextAlign.center,
                                       style: CustomText.headlineWhite500)),
                             ),
                           if (!enabledNextButton)
                             FadeIn(
                               child: CustomButton(
-                                  voidCallback: () {},
+                                  voidCallback: () =>
+                                      context.push(PathRouter.login),
                                   margin:
                                       const EdgeInsetsDirectional.only(end: 10),
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(10)),
                                   colorButton: CustomColor.information900,
-                                  textButton: const Text('Login',
+                                  textButton: const Text(
+                                      InformativeTexts.welcomeScreenLoginBtn,
                                       textAlign: TextAlign.center,
                                       style: CustomText.headlineWhite500)),
                             )
