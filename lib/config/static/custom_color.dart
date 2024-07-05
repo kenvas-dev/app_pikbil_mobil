@@ -61,4 +61,15 @@ class CustomColor {
   static const Color information300 = Color.fromRGBO(95, 231, 253, 1);
   static const Color information200 = Color.fromRGBO(152, 245, 254, 1);
   static const Color information100 = Color.fromRGBO(204, 253, 254, 1);
+
+  static const Color gray100 = Color.fromRGBO(255, 255, 255, 1);
+  static const Color gray200 = Color.fromRGBO(227, 227, 227, 1);
+  static const Color gray300 = Color.fromRGBO(199, 199, 199, 1);
+  static const Color gray400 = Color.fromRGBO(171, 171, 171, 1);
+  static const Color gray500 = Color.fromRGBO(143, 143, 143, 1);
+  static const Color gray600 = Color.fromRGBO(115, 115, 115, 1);
+  static const Color gray700 = Color.fromRGBO(87, 87, 87, 1);
+  static const Color gray800 = Color.fromRGBO(59, 59, 59, 1);
+  static const Color gray900 = Color.fromRGBO(31, 31, 31, 1);
+  static const Color black = Color.fromRGBO(0, 0, 0, 1);
 }
