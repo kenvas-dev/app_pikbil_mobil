@@ -7,4 +7,9 @@ class PathRouter {
   static const String billing = '/billing';
   static const String changePassword = '/change-password';
   static const String notification = '/notification';
+  static const String login = '/login';
+  static const String register = '/register';
+  static const String checkEmail = '/check-email';
+  static const String forgotPassword = '/forgot-password';
+  static const String createPassword = '/create-password';
 }
