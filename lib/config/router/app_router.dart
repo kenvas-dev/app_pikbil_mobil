@@ -46,4 +46,39 @@ final appRouter =
       return const NotificationScreen();
     },
   ),
+  GoRoute(
+    path: PathRouter.login,
+    name: LoginScreen.name,
+    builder: (context, state) {
+      return const LoginScreen();
+    },
+  ),
+  GoRoute(
+    path: PathRouter.register,
+    name: RegisterScreen.name,
+    builder: (context, state) {
+      return const RegisterScreen();
+    },
+  ),
+  GoRoute(
+    path: PathRouter.checkEmail,
+    name: CheckEmailScreen.name,
+    builder: (context, state) {
+      return const CheckEmailScreen();
+    },
+  ),
+  GoRoute(
+    path: PathRouter.forgotPassword,
+    name: ForgotPasswordScreen.name,
+    builder: (context, state) {
+      return const ForgotPasswordScreen();
+    },
+  ),
+  GoRoute(
+    path: PathRouter.createPassword,
+    name: CreateNewPasswordScreen.name,
+    builder: (context, state) {
+      return const CreateNewPasswordScreen();
+    },
+  )
 ]);
