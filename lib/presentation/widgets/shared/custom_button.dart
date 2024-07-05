@@ -6,6 +6,7 @@ class CustomButton extends StatelessWidget {
   final BorderRadius borderRadius;
   final Color colorButton;
   final Text textButton;
+  final double? width;
 
   const CustomButton(
       {super.key,
@@ -13,11 +14,12 @@ class CustomButton extends StatelessWidget {
       required this.margin,
       required this.borderRadius,
       required this.colorButton,
-      required this.textButton});
+      required this.textButton,
+      this.width});
 
   @override
   Widget build(BuildContext context) {
-    final double widthViewport = MediaQuery.of(context).size.width;
+    width != null ?? MediaQuery.of(context).size.width;
     return GestureDetector(
       onTap: voidCallback,
       child: Container(
@@ -25,7 +27,7 @@ class CustomButton extends StatelessWidget {
         child: ClipRRect(
           borderRadius: borderRadius,
           child: Container(
-            width: widthViewport * 0.70,
+            width: width,
             color: colorButton,
             child: Padding(
               padding: EdgeInsets.all(10),
