@@ -1,3 +1,8 @@
+export './credentials/check_email_screen.dart';
+export './credentials/create_new_password.dart';
+export './credentials/forgot_password_screen.dart';
+export './credentials/login_screen.dart';
+export './credentials/register_screen.dart';
 export './profile/account_screen.dart';
 export './profile/billing_screen.dart';
 export './profile/change_password_screen.dart';
