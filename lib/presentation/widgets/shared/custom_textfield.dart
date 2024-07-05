@@ -34,7 +34,7 @@ class CustomTextField extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(10)));
 
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 20),
+      margin: const EdgeInsets.symmetric(vertical: 15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
