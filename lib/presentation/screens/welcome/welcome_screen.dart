@@ -1,12 +1,9 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:app_pikbil_mobil/config/static/custom_color.dart';
 import 'package:app_pikbil_mobil/config/static/static.dart';
 import 'package:app_pikbil_mobil/presentation/views/views.dart';
 import 'package:app_pikbil_mobil/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
-
 
 class WelcomeScreen extends StatefulWidget {
   static const String name = 'welcome-screen';
@@ -44,41 +41,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   SizedBox(
                     height: 600,
                     child: PageView(
+                      physics: NeverScrollableScrollPhysics(),
                       controller: controller,
                       onPageChanged: (value) {
                         pagePosition = value;
-                        print(pagePosition);
-                        // if (pagePosition < pageCarousel.length - 1) {
-                        //   pagePosition = pagePosition + 1;
-                        //   controller.animateToPage(pagePosition,
-                        //       duration: const Duration(milliseconds: 400),
-                        //       curve: Curves.easeIn);
-                        //   setState(() {
-                        //     enabledSkipButton = true;
-                        //   });
-                        //   if (pagePosition == pageCarousel.length - 1) {
-                        //     setState(() {
-                        //       enabledNextButton = false;
-                        //     });
-                        //   }
-                        // }
-
-                        // if (pagePosition <= pageCarousel.length &&
-                        //     pagePosition > 0) {
-                        //   if (pagePosition == 1) {
-                        //     setState(() {
-                        //       enabledSkipButton = false;
-                        //     });
-                        //   }
-                        //   pagePosition = pagePosition - 1;
-                        //   controller.animateToPage(pagePosition,
-                        //       duration: const Duration(milliseconds: 400),
-                        //       curve: Curves.easeIn);
-
-                        //   setState(() {
-                        //     enabledNextButton = true;
-                        //   });
-                        // }
                       },
                       children: pageCarousel,
                     ),
