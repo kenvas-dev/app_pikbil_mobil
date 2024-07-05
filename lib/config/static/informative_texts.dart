@@ -2,7 +2,8 @@ class InformativeTexts {
   static const String profileScreenProfile = 'Profile';
   static const String profileScreenLogout = 'Logout';
   static const String profileScreenLogoutAccount = 'Logout Account';
-  static const String profileScreenLogoutAccountDetails = 'loremEst ut aliquip consequat in cupidatat veniam quis duis irure ex enim culpa sit?';
+  static const String profileScreenLogoutAccountDetails =
+      'loremEst ut aliquip consequat in cupidatat veniam quis duis irure ex enim culpa sit?';
   static const String profileScreenNameUser = '#Name Client';
   static const String profileScreenCodeUser = '#Code';
   static const String profileMenuOptionAccount = 'Account profile';
@@ -49,4 +50,14 @@ class InformativeTexts {
   static const String notificationScreenReceiveNewsletter =
       'Receive newsletter from pikibil';
   static const String notificationScreenUpdate = 'Update about pikibil apps';
+
+  static const String welcomeScreenEndlessOption = 'Endless option';
+  static const String welcomeScreenEndlessOptionDescriptions =
+      'Quis exercitation ullamco aliquip pariatur amet enim anim cillum adipisicing.';
+  static const String welcomeScreenDriveConfidently = 'Drive confidently';
+  static const String welcomeScreenDriveConfidentlyDescriptions =
+      'Quis exercitation ullamco aliquip pariatur amet enim anim cillum adipisicing.';
+  static const String welcomeScreenDriveSupport = '24/7 Support';
+  static const String welcomeScreenDriveSupportDescriptions =
+      'Quis exercitation ullamco aliquip pariatur amet enim anim cillum adipisicing.';
 }
